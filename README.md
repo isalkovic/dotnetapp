@@ -1,0 +1,2 @@
+# dotnetcore-openshift
+gefrickel
