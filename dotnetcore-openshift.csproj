@@ -6,6 +6,9 @@
 
   <ItemGroup>
     <PackageReference Include="Microsoft.AspNetCore.App" />
+    <PackageReference Include="MiniProfiler.AspNetCore.Mvc">
+      <Version>4.0.133</Version>
+    </PackageReference>
   </ItemGroup>
 
 </Project>
