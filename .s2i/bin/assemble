@@ -1,6 +1,8 @@
 #!/bin/bash
 echo "Before assembling"
 
+yum install perf -y
+
 /usr/libexec/s2i/assemble
 rc=$?
 
