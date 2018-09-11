@@ -3,7 +3,7 @@ echo "Before assembling"
 
 # yum install perf -y
 
-dotnet restore "$DOTNET_STARTUP_PROJECT" --disable-parallel
+#dotnet restore "$DOTNET_STARTUP_PROJECT" --disable-parallel
 
 /usr/libexec/s2i/assemble
 rc=$?
