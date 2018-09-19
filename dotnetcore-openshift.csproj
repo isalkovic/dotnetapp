@@ -11,8 +11,4 @@
     </PackageReference>
   </ItemGroup>
 
-  <ItemGroup>
-    <Folder Include=".s2i\bin" />
-  </ItemGroup>
-
 </Project>

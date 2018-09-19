@@ -3,7 +3,10 @@ WORKDIR /app
 
 # Copy csproj and restore as distinct layers
 COPY *.csproj ./
-RUN dotnet restore --disable-parallel
+RUN dotnet restore --disable-parallel --verbosity d
+
+RUN echo 'dotnet restore --disable-parallel'
+
 
 # Copy everything else and build
 COPY . ./
