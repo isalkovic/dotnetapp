@@ -143,7 +143,7 @@ done
 # run tests
 for TEST_PROJECT in $DOTNET_TEST_PROJECTS; do
     echo "---> Restoring test project ($TEST_PROJECT) dependencies..."
-    dotnet restore "$TEST_PROJECT" $RESTORE_OPTIONS $VERBOSITY_OPTION
+    dotnet restore "$TEST_PROJECT" $RESTORE_OPTIONS $VERBOSITY_OPTION --disable-parallel
     echo "---> Running test project: $TEST_PROJECT..."
     dotnet test "$TEST_PROJECT" -f "$DOTNET_FRAMEWORK" $VERBOSITY_OPTION
 done
