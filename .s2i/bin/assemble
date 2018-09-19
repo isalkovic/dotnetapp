@@ -150,7 +150,7 @@ done
 
 # publish application
 echo "---> Restoring application dependencies..."
-dotnet restore "$DOTNET_STARTUP_PROJECT" $RESTORE_OPTIONS $VERBOSITY_OPTION
+dotnet restore "$DOTNET_STARTUP_PROJECT" $RESTORE_OPTIONS $VERBOSITY_OPTION -disable-parallel
 echo "---> Publishing application..."
 dotnet publish "$DOTNET_STARTUP_PROJECT" -f "$DOTNET_FRAMEWORK" -c "$DOTNET_CONFIGURATION" $VERBOSITY_OPTION \
        --self-contained false /p:PublishWithAspNetCoreTargetManifest=false -o "$DOTNET_APP_PATH"
